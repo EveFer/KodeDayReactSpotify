@@ -2,37 +2,43 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.app-container {
   background-color: #282c34;
-  min-height: 100vh;
+  width: 100vw; /*tomar todo el viewport*/
+  height: 100vh; /*toma todo el alto del viewport*/
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: center; /**centrar*/
+  align-items: center; /*centrar*/
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  width: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a, input, button {
+  color: white;
+  font-size: 25px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 15px 30px;
+  outline: none; /*quitar linea azul del input al seleccionar*/
 }
+
+a {
+  text-decoration: none;
+  cursor: pointer; /*colocar la manita*/
+}
+
+input, button {
+  background-color: transparent;
+}
+
+a:hover, input:focus, button:hover{
+  border-color: #7de71d;
+  color: #7de71d;
+}
+
+
+
